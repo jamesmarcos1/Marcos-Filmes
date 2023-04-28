@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root {
+    --branco-principal : #FFFFFF;
+    --cinza-secundario : #c0c0c0;
+    --botao-azul : #167bf7;
+    --cor-de-fundo : #00030c;
+    --cor-vermelha : #ff1010; 
+    --cor-amarela : #ffd416;
+    --fonte-principal: 'Inter';
+    --cor-laranja: #ff7300;
+    --cor-azul-marinho: #23238E;
+    --cor-aquamarine: #70DB93;
+}
+
+* {
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 150px;
+    color: var(--branco-principal);
+}
+
+div#Marcos {
+    background-image: url(imagens/cara.jpeg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background-color: var(--branco-principal);
+    width: 90px;
+    height: 100px;
+
+    transition: transform 0.3s ease;
+}
+
+div#Marcos:hover {
+    transform: translate(-50%, -60%);
+
+}
+
+p {
+    color: var(--cinza-secundario);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 300%);
+}
+
+div#perfis {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, 350%);
+    padding: 5px;
+    border: 1px solid var(--cinza-secundario);
+    background-color: #00030c;
+    color: var(--cinza-secundario);
+    height: 20px;
+    width: 150px;
+    text-align: center;
+    margin: 5px var(--branco-principal);
+
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Slider</title>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="shortcut icon" 
+                href="imgpagina/nina.jpeg" 
+                type="image/x-icon">
+</head>
+<body>
+    <div class="container__home">
+    <img src="imagens/onepiece,jpg.jpg" alt="aaa">
+    </div>
+    <center>
+    <header class="container-titulo"><h1>Categorias</h1></header>
+        </center>
+    <div class="container">
+        <div class="image-container">
+            <a href="animes.html" target="_blank"><img src="imgpagina/animes.jpg" id="content1" class="active" ></a>
+            <a href="superherois.html" target="_blank"> <img src="imgpagina/super1.jpg" id="content2" width="800" height="620"> </a>
+            <a href="desenhos-animados.html" target="_blank"> <img src="imgpagina/desenho1.jpg" id="content3" width="800" height="620"> </a>
+            <a href="filmes-variados.html" target="_blank" > <img src="imgpagina/FILMES1.jpg" id="content4" width="800" height="620">  </a>
+            <img src="imgpagina/nina.jpeg" id="content5" width="800" height="620">
+        </div>
+        <div class="dot-container">
+            <button onclick = "dot(1)"></button>
+            <button onclick = "dot(2)"></button>
+            <button onclick = "dot(3)"></button>
+            <button onclick = "dot(4)"></button>
+            <button onclick = "dot(5)"></button>
+        </div>
+        <button id="prev" onclick="prev()"> &lt; </button>
+        <button id="next" onclick="next()"> &gt; </button>
+    </div>
+    <script src="index.js"></script>
+
+    
+</body>
+</html>
